@@ -1,19 +1,7 @@
-import Resume, { IResume } from '../../models/Resume'; // Adjust the path to your Resume model
-import connectToDatabase from '../../lib/mongodb';
-
-async function getData(): Promise<{ resumeData: IResume | null }> {
-  try {
-    const { db } = await connectToDatabase(); // Connect to MongoDB
-    const resumeData = await db.collection('resumes').findOne({});
-    return { resumeData: resumeData as IResume };
-  } catch (error) {
-    console.error('Error fetching resume data:', error);
-    return { resumeData: null };
-  }
-};
+import { getData } from '@/app/actions'
 
 async function ResumePage() {
-    const {resumeData} = await getData();
+    const { resumeData } = await getData();
     if (!resumeData) {
         return <div>Loading...</div>;
     }
