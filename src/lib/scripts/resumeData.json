@@ -1,0 +1,37 @@
+{
+    "personalDetails": {
+      "name": {
+        "first": "Kyle",
+        "last": "Thornton"
+      },
+      "email": "kyle@ration.fyi",
+      "linkedin": "k-thornton",
+      "featuredYoutube": {
+        "videoId": "5NZ4EYkSCcs",
+        "title": "My TEDx Talk"
+      }
+    },
+    "workExperience": [
+      {
+        "jobTitle": "Head of Customer Success --- US and LATAM",
+        "organization": "Ledger",
+        "location": "Portland, OR",
+        "dateRange": "Oct. 2021--Oct. 2023",
+        "summary": "Ledger makes physical hardware devices designed for the storage of cryptographic secrets. I built a crypto technical support organization from the ground up.",
+        "tasks": [
+          "Provided direct 1-on-1 technical support for Ledger's VIP clients.",
+          "Established processes for support operations, technical escalations, and social media communications."
+        ],
+        "logo": "graphics/ledger-small.jpeg"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Florida",
+        "degree": "B.S. in Computer Engineering",
+        "location": "Gainesville, FL",
+        "dateRange": "July 2006--Dec. 2010"
+      }
+    ]
+  }
+  
